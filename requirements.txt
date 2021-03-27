@@ -1,0 +1,7 @@
+#Pyaudio
+pip install pipwin
+pipwin install pyaudio
+#Pygame
+pip install pygame
+#speech_recognition
+pip install SpeechRecognition
