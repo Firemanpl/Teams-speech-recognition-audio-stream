@@ -6,27 +6,19 @@ words = ["Kamilu", "stróżek", "Kamil", "kamień", "stróżyk", "Stróżyk", "S
 
 class Audio:
     def voice_speech(self):
-        mixer.init(devicename='CABLE Input (VB-Audio Virtual Cable)')
+        mixer.init()
         mixer.music.load("alert.wav")
         print("Ansewer_sound=true")
         mixer.music.play(0, 0.0)
         time.sleep(1)
         mixer.music.stop()
-def capture():
-    CHUNK = 1024
-    FORMAT = pyaudio.paInt16
-    CHANNELS = 2
-    RATE = 44100
-    p = pyaudio.PyAudio()
-    stream = p.open(format=FORMAT,channels=CHANNELS,rate=RATE,input=True,frames_per_buffer=CHUNK,input_device_index=2)
-    data = stream.read(CHUNK)
-    frames = []
-    frames.append(data)
+
+
 
 def listen_speech():
     r = sr.Recognizer()
-    with sr.Microphone() as source:
-        print('Powiedz coś: ')
+    with sr.Microphone(device_index=1) as source:
+        print('Recognizing: ')
         #r.adjust_for_ambient_noise(source)
         audio = r.listen(source)
         try:
@@ -44,7 +36,6 @@ def listen_speech():
         except Exception:
             print("Except error")
 play = Audio()
-capture()
 while True:
     listen_speech()
 
