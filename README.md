@@ -1,4 +1,4 @@
-#Instruction
+# Instruction
 
 This code are using **python3** and **ubuntu**.
 1. First you need pull code to your environment or something else method, but you must create **virtualenv**. I used PyCharm(Preferred).
@@ -45,7 +45,7 @@ load-module module-loopback sink=Output_to_Input
 
 ![pyaudio](images/recording.png)
 
-###(Optional, not tested) Pyaudio on Windows. 
+### (Optional, not tested) Pyaudio on Windows. 
 
  - ```pip install pipwin```
 
