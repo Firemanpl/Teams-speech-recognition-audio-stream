@@ -1,0 +1,10 @@
+{
+    "email": "example@example.com",
+    "password": "example",
+    "current_members_less_than": 2,
+    "teamname": "Test",
+    "meetingtime": "16:00",
+    "your_voice": ["record (2).wav", "alert.wav"],
+    "trigger_words": ["Filemon", "Json", "Donald", "Stinky", "example", "example", "example"],
+    "language": "pl-PL"
+  }

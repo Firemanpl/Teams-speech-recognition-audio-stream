@@ -1,0 +1,5 @@
+pyaudio
+pygame
+SpeechRecognition
+selenium
+
